@@ -188,6 +188,9 @@ body {
 
 .main_store {
   background: rgb(213, 48, 5);
+  display: flex;
+  position: relative;
+  box-shadow: -1000px 20px 40px 0px rgb(213, 48, 5), 1000px 20px 40px rgb(213, 48, 5), 0px 40px 40px 0px rgb(213, 48, 5), 0px 40px 40px 0px rgb(213, 48, 5);
 }
 
 .store_h1 {
@@ -198,6 +201,10 @@ body {
   font-size: 30px;
   font-weight: 400;
   line-height: 35px;
+}
+
+.store_text_block {
+  z-index: 2;
 }
 
 .store_buttons {
@@ -235,25 +242,95 @@ body {
 }
 
 .store_prev {
-  max-width: 419px;
+  width: 419px;
   padding-left: 25px;
+  margin-bottom: 19px;
   color: #ffffff;
   font-family: Montserrat;
   font-size: 21px;
   font-weight: 600;
   line-height: 26px;
+  text-align: center;
 }
 
-.store_text, .store_text_versions {
-  max-width: 419px;
+.store_text {
+  width: 431px;
+  z-index: 1;
+  color: #ffffff;
   text-align: center;
   padding-left: 25px;
   font-family: Montserrat;
   font-size: 18px;
   font-weight: 400;
   line-height: 22px;
+  margin-bottom: 312px;
+}
+.store_text a {
+  color: #ffffff;
+  text-decoration: underline;
 }
 
-.store_text_versions {
-  text-decoration: underline;
+.store_img {
+  position: absolute;
+  top: 169px;
+  left: 336px;
+  z-index: 0;
+}
+
+.footer_contacts {
+  display: flex;
+  margin: 147px 62px 76px 452px;
+  gap: 120px;
+}
+
+.footer_contacts_column {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.footer_h {
+  color: #ffffff;
+  font-family: Montserrat;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.footer_text {
+  text-decoration: none;
+  color: #ffffff;
+  font-family: Montserrat;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.footer_header_text_block {
+  margin: 0px 120px 74px 110px;
+}
+
+.footer_header_h {
+  width: 138px;
+  color: #ffffff;
+  font-family: Kenia;
+  font-size: 50px;
+  font-weight: 400;
+}
+
+.footer_header_text_b {
+  display: flex;
+  gap: 99px;
+}
+
+.footer_header_text {
+  text-decoration: none;
+  color: #ffffff;
+  font-family: Montserrat;
+  font-size: 15px;
+  font-weight: 500;
 }/*# sourceMappingURL=style.css.map */
